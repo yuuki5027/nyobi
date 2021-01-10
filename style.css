@@ -1,0 +1,364 @@
+/*
+Theme Name: N予備校
+Description: N予備校の授業で使うサンプルのテーマです。
+*/
+
+
+/* リセットCSS */
+body{
+  margin: 0;
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* コンテンツ */
+main{
+  padding: 40px;
+  background: #eee;
+}
+.pagination h2.screen-reader-text {
+  display: none;
+}
+.author{
+  color:blue;
+}
+.author-description{
+  color: red;
+}
+header{
+  /* box-shadow: 0 1px 10px #eee; */
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+.logo{
+  width: 135px;
+  height: 30px;
+  margin: 0 40px 0 0;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.pc-menu{
+  flex: 1;
+}
+.pc-menu ul{
+  display: flex;
+}
+.pc-menu li{
+  margin-right: 40px;
+}
+header .button{
+  background: #eddb22;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 300ms;
+}
+header .button:hover{
+  background: #fcef57;
+}
+
+/* パンくずリスト */
+.breadcrumb-list{
+  display: flex;
+  margin-bottom: 20px;
+}
+.breadcrumb-item{
+  margin-right: 20px;
+}
+.breadcrumb-item + .breadcrumb-item:before{
+  display: block;
+  content: ">";
+  padding-right: 20px;
+  float: left;
+}
+
+
+/* メイン */
+.main-wrapper {
+  max-width: 640px;
+  margin: auto;
+}
+.post-list {
+  padding: 15px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.post-item {
+  border-bottom: solid 1px #eee;
+  min-height: 85px;
+}
+.post-item .attachment-thumbnail{
+  float: left;
+  margin-right: 16px;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+.post-item h2{
+  font-size: 16px;
+}
+.post-item h2 a{
+  text-decoration: none;
+}
+.screen-reader-text {
+  display: none;
+}
+/* ページネーション */
+.pagination {
+  text-align: center;
+}
+.page-numbers {
+  background: #fff;
+  padding: 10px;
+  border: solid 1px #ccc;
+}
+.page-numbers.current{
+  background: #eee;
+}
+.page-numbers.next,
+.page-numbers.prev{
+  border: 0;
+  background: none;
+}
+/* フッター */
+.post-item:first-child h2{
+  margin-top: 0;
+}
+.post-item:last-child{
+  border-bottom: 0;
+}
+.post-item:last-child p{
+  margin-bottom: 0;
+}
+footer {
+  background: #2b2b2b;
+  padding: 20px;
+  text-align: center;
+}
+.icon{
+  width: 26px;
+  height: 26px;
+}
+footer ul{
+  display: flex;
+  justify-content: center;
+}
+.links-social{
+  margin: 20px 40px 40px;
+}
+.links-main-pages,
+.links-sub-pages{
+  margin: 40px;
+}
+.links-social li{
+  padding: 0 10px;
+}
+.links-main-pages li,
+.links-sub-pages li{
+  padding: 0 30px;
+  border-right: solid 1px #fff;
+  font-size: 14px;
+}
+.links-main-pages li:last-child,
+.links-sub-pages li:last-child{
+  border-right: 0;
+}
+.links-main-pages a,
+.links-sub-pages a{
+  color: #fff;
+  text-decoration: none;
+}
+small {
+  color: #fff;
+}
+.sp-only{
+  display: none;
+}
+.menu img{
+  width: 30px;
+  height: 30px;
+}
+.icon-close{
+  display: none;
+} 
+.sp-menu a {
+  display: block;
+  border-bottom: solid 1px #eee;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-image: url("images/left-arrow.png");
+  background-size: 10px 20px;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+}
+.sp-menu{
+  display: none;
+}
+/* スマホの時 */
+@media screen and (max-width:720px) {
+  main{
+    margin-top: 20px;
+    padding: 20px 20px 50px;
+  }
+  .sp-only{
+    display: inherit;
+    margin-left: 10px;
+  }
+  .pc-only{
+    display: none !important;
+  }
+  header{
+    padding: 20px;
+  }
+  .links-main-pages{
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .links-main-pages li{
+    border: none;
+    border-bottom: dotted 1px #fff;
+    padding: 20px 0;
+  }
+  .links-main-pages{
+    border-top: dotted 1px #fff;
+
+  }
+}
+/* 記事ページ */
+.image-responsive{
+  width: 100%;
+  height: auto;
+}
+.text-center{
+  text-align: center;
+}
+
+.post-article{
+  padding: 15px;
+  background: #fff;
+}
+
+.post-article h1{
+  margin-top: 0;
+}
+
+.author{
+  border-top: solid 1px #ccc;
+  padding-top: 10px;
+}
+
+.navigation{
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+.navigation:after{
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.prev-page,
+.next-page{
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.prev-page{
+  float: left;
+  padding-right: 10px;
+}
+
+.next-page{
+  float: right;
+  padding-left: 10px;
+}
+
+.comment-form label{
+  display: block;
+}
+
+.form-submit{
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"]{
+  height: 32px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  width: 100%;
+}
+
+textarea{
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  width: 100%;
+}
+
+input[type="submit"]{
+  -webkit-appearance: button;
+  appearance: button;
+  width: 120px;
+  height: 32px;
+}
+
+.sub-title{
+  font-size: 18px;
+  color: #053c74;
+}
+
+/* カスタム投稿ページ */
+
+.member-list section{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.member-list section:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.member-list section p{
+  margin: 0;
+}
+
+.member-avatar{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  float: left;
+  margin-right: 10px;
+}
+
+.member-name{
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.member-subject li{
+  font-size: 13px;
+}
+.lay-clear{
+  overflow: hidden;
+}
+.single-member .sentence{
+  margin-top: 15px;
+}
